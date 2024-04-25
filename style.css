@@ -1,27 +1,39 @@
-header {font-size: larger;}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-size: larger;
+}
 
 aside {
 background-color: bisque;
-display: flex;
 max-width: 350px;
-height: 860px;
 }
 
-.body-color {background-color: rgb(95, 94, 94);}
-.Section-Aside {margin: 20px;}
+.body-color{
+    background-color: rgb(95, 94, 94);
+    /*é errado eu sei mas por algum motivo o body não tá mudando a cor se não for desse jeito*/
+}
+.Section-Aside {
+    margin: 20px;
 
-.main-div {display: flex;}
+}
+
+
+.main-div {
+    display: flex;
+    height: 100%;
+}
 
 article { 
-justify-content: center;
 margin: 0 auto;
-max-height: 100px;
+height: 100%;
 }
-
-.carousel {margin: 0;}
 
 .section-pages {
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 margin: 25px;
 }
