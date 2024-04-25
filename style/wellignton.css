@@ -1,0 +1,89 @@
+* 
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+:root {
+  --text: #EDF1F7;
+  --red: #C51212;
+  --blue: #0041C2;
+  --green: #14B02D;
+  --yellow: #ffc12b;
+}
+
+body, button, a{
+  color: var(--text);
+  font: 400 1rem "Mukta", sans-serif;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #6593f1;
+  justify-content: space-evenly;
+}
+
+
+header img {
+  width: 70px;
+  height: auto;
+}
+
+.container{
+  display: flex;
+  margin: 0;
+}
+main{
+  background-color:#1070ff;
+  display: flex;
+}
+
+.div-section {  
+display: flex;
+align-items: center;
+justify-content: space-around;
+background-color: #9fbdeb;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  background-color:#48c05c;
+  height: 250px;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px;
+  font-size: small;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+aside {
+  flex-direction: column;
+  display: flex;
+  padding: 20px ;
+  background-color:#48c05c;
+  max-width: 450px;
+  height: 100%;
+}       
+
+footer {
+  background-color: #6593f1;
+  align-items: center;
+  display:flex;
+  justify-content: space-around;
+}
+
+.img-border {
+  border-radius: 60px;
+  width:  160px;
+  height: 160px;
+}
+
+.img-div {max-width: 100%;}
