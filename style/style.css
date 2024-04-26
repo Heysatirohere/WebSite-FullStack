@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-size: larger;
+}
+
+aside {
+background-color: bisque;
+max-width: 350px;
+}
+
+.body-color{
+    background-color: rgb(95, 94, 94);
+    /*é errado eu sei mas por algum motivo o body não tá mudando a cor se não for desse jeito*/
+}
+.Section-Aside {
+    margin: 20px;
+
+}
+
+
+.main-div {
+    display: flex;
+    height: 100%;
+}
+
+article { 
+margin: 0 auto;
+height: 100%;
+}
+
+.section-pages {
+display: flex;
+justify-content: space-around;
+margin: 25px;
+}
