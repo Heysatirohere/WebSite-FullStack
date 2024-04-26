@@ -1,20 +1,24 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     font-size: larger;
+    background-color: bisque;
 }
 
 aside {
-background-color: bisque;
+background-color: rgb(43, 103, 57);
 max-width: 350px;
 }
 
 .body-color{
-    background-color: rgb(95, 94, 94);
-    /*é errado eu sei mas por algum motivo o body não tá mudando a cor se não for desse jeito*/
+    background-color:  rgb(43, 103, 57);
+    /*é errado eu sei mas por algum motivo o body não tá mudando a cor se não for desse jeito
+    (provavelmente porque o bootstrap tá com superioridade e tá dando overwrite no meu mas não sei resolver)
+    */
 }
 .Section-Aside {
     margin: 20px;
@@ -37,3 +41,18 @@ display: flex;
 justify-content: space-around;
 margin: 25px;
 }
+
+footer {
+    background-color: bisque;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+}
+
+li {
+    list-style: none;
+}
+
+.pardon {font-style: oblique;}
+
