@@ -3,7 +3,7 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-header, footer {background-color: bisque;}
+header, footer {background-color: rgb(22, 82, 68);}
 header {
     display: flex;
     align-items: center;
@@ -58,3 +58,6 @@ li {
 
 .pardon {font-style: oblique;}
 
+img {
+    border-radius: 8px;
+}
