@@ -1,0 +1,283 @@
+:root {
+    --cor1:#3e4c63;
+    --cor2:#b73333;
+    --cor3:#ffd300;
+    --cor4:#f67101;
+    --cor5:#82a649aa;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body {
+    width: 100%;
+}
+
+/*----- Nav config -----*/
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1% ;
+    background-color: var(--cor5);
+    border-bottom: solid   var(--cor3);
+}
+
+.house-container {
+    height: 2.5%;
+    width: 2.5%;
+    cursor: pointer;
+}
+
+.houme {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.navicon {
+    text-decoration: none;
+    color: var(--cor1);
+    font-family: "Open Sans", sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+.logo {
+    height: 6%;
+    width: 6%;
+    block-size: auto;
+    object-fit: cover;
+}
+
+/*----- Conteudo -----*/
+
+.content-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10%;
+    padding: 2.5%;
+    flex: 1;
+}
+
+.aside-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    background-color: #f66f01c5;
+    width: 600px;
+    height: 800px;
+    border-radius: 4px;
+
+    box-shadow: 4px 4px 4px rgba(23, 23, 23, 0.186);
+}
+
+.container-content-aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-aside {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -20px;
+}
+
+.frezze-image {
+    display: flex;
+    justify-content: center;
+}
+
+.frezze {
+    width: 90%;
+    height: 90%;
+    border-radius: 6px;
+}
+
+.segunda-imagem {
+    display: none;
+}
+
+.container-da-historia-do-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-history-dk {
+    margin: 20px auto;
+}
+
+.history-kong {
+    margin: 0 40px;
+    font-family:  "Open Sans", sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.container-main {
+    display: flex;
+    align-items: center;
+}
+
+.imgDK {
+    border-radius: 6px;
+}
+
+/*----- Config Personagens -----*/
+
+.container-content-personagens{
+    text-align: center;
+   border-top: solid var(--cor3) ;
+}
+
+.personagens-title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    margin: 40px 0px 40px 0;
+    color: var(--cor3);
+}
+
+.container-personagens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 40px;
+    gap: 10%;
+}
+
+.content-personagens {
+    background-color: #b733339f;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+
+}
+
+.dk {
+    background-size: cover;
+    height: 35%;
+    width: 45%;
+    border-radius: 12px;
+    margin:12px 0;
+    box-shadow: 4px 4px 4px rgba(23, 23, 23, 0.186);
+}
+
+.container-text {
+    margin-bottom: 10px;
+}
+
+.descrição-personagem {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    line-height: 1.5em;
+    margin: 0 50px;
+    color: var(--cor3);
+}
+
+.nomes-personagens {
+    font-family: "Open Sans", sans-serif;
+    color: var(--cor4);
+}
+
+
+.rodape {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+   background-color:  var(--cor5);
+}
+
+.rodape-text {
+    font-family: "Open Sans", sans-serif;
+    margin: 20px auto;
+    font-size: 1.3em;
+    color: white;
+}
+
+/*----- Config query -----*/
+
+@media  (max-width: 800px) {
+    nav {
+        display: none;
+    }
+
+    .content-container {
+        display: none;
+    }
+
+    .container-content-personagens {
+        display: none;
+    }
+}
+
+@media (max-width: 1660px) {
+    .container-main {
+        display: none;
+    }
+
+    .content-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .aside-content {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .container-content-aside{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .frezze {
+        display: none;
+    }
+
+    .img-aside {
+        width: 60%;
+       
+    }
+
+    .segunda-imagem {
+        display: unset;
+    }
+
+    .imagem2 {
+        width: 90%;
+        margin-left: 40px;
+    }
+
+    .container-da-historia-do-game {
+        width: 80%;
+    }
+}
