@@ -3,14 +3,13 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+header, footer {background-color: bisque;}
 header {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 70px;
     font-size: larger;
-    background-color: bisque;
 }
 
 aside {
@@ -46,7 +45,6 @@ margin: 25px;
 }
 
 footer {
-    background-color: bisque;
     align-items: center;
     display: flex;
     justify-content: space-evenly;
