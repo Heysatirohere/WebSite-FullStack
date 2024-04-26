@@ -22,7 +22,6 @@ max-width: 350px;
 }
 .Section-Aside {
     margin: 20px;
-
 }
 
 
@@ -48,6 +47,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     height: 100px;
+    width: 100%;
 }
 
 li {
